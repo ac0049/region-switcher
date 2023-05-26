@@ -1,5 +1,11 @@
 # Get client's location
 ```
+  var req = new XMLHttpRequest();
+  req.open('GET', 'https://get.geojs.io/v1/ip/country.json', false);
+  req.send(null);
+  console.log(req.responseText);
+  
+  
   var geojs = JSON.parse(httpGet("https://get.geojs.io/v1/ip/country.json"))
 
   var code = geojs.country.toLowerCase()
